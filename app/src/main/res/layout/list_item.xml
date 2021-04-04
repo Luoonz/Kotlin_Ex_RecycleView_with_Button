@@ -23,6 +23,12 @@
             android:padding="16dp"
             android:textAppearance="?attr/textAppearanceHeadline6" />
 
+        <Button
+            android:id="@+id/item_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/item_btn" />
+
     </LinearLayout>
 
 </com.google.android.material.card.MaterialCardView>
