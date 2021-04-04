@@ -7,6 +7,7 @@ import luoon.school.myapplication.model.Affirmation
 class Datasource {
     fun loadAffirmation() : List<Affirmation>{
         return listOf<Affirmation>(
+            // 아이템별 버튼의 텍스트 값 추가
             Affirmation(R.string.affirmation1, R.drawable.image1,R.string.item_btn),
             Affirmation(R.string.affirmation2, R.drawable.image2,R.string.item_btn),
             Affirmation(R.string.affirmation3, R.drawable.image3,R.string.item_btn),

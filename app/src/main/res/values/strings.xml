@@ -10,4 +10,7 @@
     <string name="affirmation8">I have the courage to follow my heart.</string>
     <string name="affirmation9">Things will unfold at precisely the right time.</string>
     <string name="affirmation10">I will be present in all the moments that this day brings.</string>
+
+    <!-- 버튼별 text 변경을 위한 %s(문자열 자료형) 추가 -->
+    <string name="item_btn">Button %s</string>
 </resources>

@@ -23,6 +23,9 @@
             android:padding="16dp"
             android:textAppearance="?attr/textAppearanceHeadline6" />
 
+        <!--
+            리사이클 뷰에 들어가는 아이템에 버튼 위젯 추가
+        -->
         <Button
             android:id="@+id/item_button"
             android:layout_width="match_parent"

@@ -20,6 +20,7 @@ class ItemAdapter(
     class ItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         val textView: TextView = view.findViewById(R.id.item_title)
         val imageView: ImageView = view.findViewById(R.id.item_image)
+        // 아이템 버튼 위젯을 뷰 홀더에 연결
         val btn: Button = view.findViewById(R.id.item_button)
     }
 
@@ -35,11 +36,15 @@ class ItemAdapter(
         val item = dataset[position]
         holder.textView.text =  context.resources.getString(item.stringResourceId)
         holder.imageView.setImageResource(item.imageResourceId)
+
+        // 뷰 홀더의 버튼 위젯이 가진 Text 속성을 list 의 index(position 파라미터) + 1 로 변경
+        // itme.stringResBtn -> R.string.item_btn -> Button %s -> Button 1, Button 2, ㆍㆍㆍ
         holder.btn.setText(context.resources.getString(item.stringResBtn, position+1))
 
+        // 버튼별 클릭이벤트 부여
         holder.btn.setOnClickListener {
+            // 뷰홀더에 저장된 text 의 값 호출
             Toast.makeText(context, "You See that \"" + holder.textView.text.toString() + "\"On my App", Toast.LENGTH_SHORT).show()
-
         }
     }
 
